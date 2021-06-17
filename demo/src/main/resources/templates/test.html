@@ -2,10 +2,15 @@
 <html lang="ja" xmlns:th="http://www.thymeleaf.org">
   <head>
     <meta charset="UTF-8" />
-    <title>Hello!!!</title>
+    <title>test calc</title>
   </head>
   <body>
     <h1>HelloWorld</h1>
     <p th:text="${msg}"></p>
+    <form method="post" action="/test">
+      <input type="form" name="calc" />
+      <input type="submit" value="計算" />
+    </form>
+    <p th:text="${result}"></p>
   </body>
 </html>
